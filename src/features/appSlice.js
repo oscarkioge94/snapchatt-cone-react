@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const counterSlice = createSlice({
+export const appSlice = createSlice({
   name: 'counter',
   initialState: {
     value: 0,
@@ -13,7 +13,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const {  incrementByAmount } = counterSlice.actions;
+export const {  incrementByAmount } = appSlice.actions;
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
